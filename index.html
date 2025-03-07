@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="utf-8" />
+  <title>AngoLeague</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <h1 id="title">Formulário de Pesquisa do <em>AngoLeague</em></h1>
+  <p id="description">Obrigado por participar desta pesquisa! A sua opinião é muito importante para nós.</p>
+  <form id="survey-form">
+    <fieldset>
+      <div class="form-control">
+        <label id="name-label" for="name">
+            Nome
+            <input id="name" type="text" placeholder="Insira seu nome" required/>
+          </label>
+      </div>
+      <div class="form-control">
+        <label id="email-label" for="email">
+            Email
+            <input id="email" type="email" placeholder="Insira seu email" required>
+          </label>
+      </div>
+      <div class="form-control">
+        <label id="number-label" for="number">
+            Idade
+            <input id="number" type="number" placeholder="Idade" min="12" max="50" required>
+          </label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <div>
+        <p>Você joga futebol de rua com frequência?</p>
+        <label class="radio-label">
+            <input name="frequency" type="radio" value="Yes" checked/> Sim
+        </label>
+        <label class="radio-label">
+            <input name="frequency" type="radio" value="No"/> Não
+        </label>
+      </div>
+      <div>
+        <p>Com que frequência você participa de jogos de futebol de rua?</p>
+        <select id="dropdown">
+            <option selected disabled value="">Selecione a sua frequência</option>
+            <option value="daily">Diariamente</option>
+            <option value="weekly">Semanalmente</option>
+            <option value="biweekly">Quinzenalmente</option>
+            <option value="monthly">Mensalmente</option>
+            <option value="rarely">Raramente</option>
+          </select>
+      </div>
+      <div>
+        <p>O que você acha mais difícil ao organizar um jogo de futebol de rua?</p>
+        <label class="checkbox-label">
+          <input type="checkbox" value="1"/>Encontrar adversários
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" value="2"/>Organizar horários
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" value="3"/>Local para jogar
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" value="4"/>Recursos de futebol para jogar
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" value="5"/>Membros de equipa para se integrar
+        </label>
+      </div>
+      <div>
+        <p>Deixe seu comentário sobre o que gostaria de ver no aplicativo</p>
+        <textarea id="comments" rows="5" placeholder="Deixe a sua opinião aqui..."></textarea>
+      </div>
+    </fieldset>
+    <input id="submit" type="submit" value="Enviar"/>
+  </form>
+</body>
+
+</html>
